@@ -40,7 +40,7 @@
 .hero {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 52% 48%;
+    grid-template-columns: 45% 55%;
     background: var(--ivory);
     padding-top: var(--nav-height);
     position: relative;

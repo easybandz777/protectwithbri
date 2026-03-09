@@ -38,7 +38,7 @@
 
 /* ── HERO GRID ───────────────────────────────── */
 .hero {
-    min-height: 82vh;
+    min-height: 68vh;
     display: grid;
     grid-template-columns: 45% 55%;
     background: var(--ivory);

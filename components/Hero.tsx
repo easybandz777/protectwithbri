@@ -91,11 +91,12 @@ export default function Hero() {
                     <Image
                         src="/images/brianna-hero.jpg"
                         alt="Brianna Willis, Insurance Advisor, standing in front of the ProtectWithBri.com office logo"
-                        fill
+                        width={1024}
+                        height={682}
+                        quality={100}
                         priority
                         className={styles.image}
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                        style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                        sizes="55vw"
                     />
                     {/* Badge pinned over image */}
                     <div className={styles.badge}>

@@ -343,16 +343,22 @@
     position: relative;
     overflow: hidden;
     background: #c8a882;
+    display: flex;
+    align-items: stretch;
 }
 
 .imageWrap {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    width: 100%;
     animation: fadeIn 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.25s both;
 }
 
 .image {
-    animation: fadeIn 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.25s both;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
 }
 
 /* Badge pinned over portrait */

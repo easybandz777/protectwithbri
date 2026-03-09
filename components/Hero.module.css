@@ -314,8 +314,8 @@
 
     .left {
         justify-content: center;
-        padding: calc(var(--nav-height) + var(--space-xl)) var(--space-md) var(--space-xl);
-        order: 1;
+        padding: var(--space-xl) var(--space-md) var(--space-xl);
+        order: 2;
     }
 
     .panel {
@@ -342,9 +342,10 @@
     }
 
     .right {
-        order: 2;
-        height: 60vw;
-        max-height: 560px;
+        order: 1;
+        height: 75vw;
+        max-height: 480px;
+        margin-top: var(--nav-height);
     }
 }
 

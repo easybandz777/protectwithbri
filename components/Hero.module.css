@@ -342,7 +342,7 @@
 .right {
     position: relative;
     overflow: hidden;
-    background: var(--beige);
+    background: #c8a882;
 }
 
 .imageWrap {
@@ -352,7 +352,7 @@
 }
 
 .image {
-    animation: subtleZoom 2.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.25s both;
+    animation: fadeIn 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.25s both;
 }
 
 /* Badge pinned over portrait */

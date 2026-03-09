@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" fill="none">
+  <!-- Shield icon -->
+  <g transform="translate(10, 10)">
+    <!-- Outer shield -->
+    <path d="M60 8 C60 8 20 20 20 20 L20 70 C20 100 60 125 60 125 C60 125 100 100 100 70 L100 20 Z"
+      fill="none"
+      stroke="#c9a96e"
+      stroke-width="2.5"
+      stroke-linejoin="round"
+    />
+    <!-- Inner shield -->
+    <path d="M60 22 C60 22 33 31 33 31 L33 70 C33 92 60 110 60 110 C60 110 87 92 87 70 L87 31 Z"
+      fill="none"
+      stroke="#c9a96e"
+      stroke-width="1.8"
+      stroke-linejoin="round"
+    />
+    <!-- Heart inside shield -->
+    <path d="M60 90 C60 90 38 73 38 60 C38 52 44 46 52 48 C56 49 60 54 60 54 C60 54 64 49 68 48 C76 46 82 52 82 60 C82 73 60 90 60 90 Z"
+      fill="none"
+      stroke="#c9a96e"
+      stroke-width="2"
+      stroke-linejoin="round"
+    />
+    <!-- Top arch accent -->
+    <path d="M35 22 Q60 12 85 22"
+      fill="none"
+      stroke="#c9a96e"
+      stroke-width="1.5"
+    />
+  </g>
+
+  <!-- Wordmark -->
+  <!-- "Protect" -->
+  <text x="132" y="72" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="400" fill="#1e2b3c" letter-spacing="-0.5">Protect</text>
+  <!-- "with" -->
+  <text x="132" y="110" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="400" fill="#1e2b3c" letter-spacing="0">with</text>
+  <!-- "Bri" -->
+  <text x="200" y="110" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="600" fill="#1e2b3c" letter-spacing="-0.5">Bri</text>
+  <!-- ".com" -->
+  <text x="264" y="110" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="400" fill="#1e2b3c">.com</text>
+
+  <!-- Divider line -->
+  <line x1="132" y1="120" x2="380" y2="120" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Tagline -->
+  <text x="132" y="140" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="400" font-style="italic" fill="#9a7c52" letter-spacing="0.3">Protecting families with clarity and compassion</text>
+</svg>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback, useRef } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { NAV_LINKS } from '@/data/siteContent';
 import { smoothScrollTo } from '@/lib/utils';
@@ -63,9 +64,14 @@ export default function Navbar() {
                     aria-label="ProtectWithBri home"
                     onClick={(e) => handleAnchorClick(e, '#hero')}
                 >
-                    <span className={styles.brandName}>
-                        ProtectWithBri<span className={styles.brandDot}>.com</span>
-                    </span>
+                    <Image
+                        src="/images/logo.svg"
+                        alt="ProtectWithBri.com"
+                        width={190}
+                        height={72}
+                        priority
+                        className={styles.brandLogo}
+                    />
                 </a>
 
                 {/* Desktop nav links */}

@@ -1,0 +1,97 @@
+.section {
+    background: var(--white);
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--beige);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.item {
+    border-bottom: 1px solid var(--beige);
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.trigger {
+    width: 100%;
+    text-align: left;
+    padding: 1.35rem var(--space-lg);
+    background: var(--ivory);
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    transition: background var(--duration) var(--ease);
+    cursor: pointer;
+    border: none;
+}
+
+.trigger:hover {
+    background: var(--cream);
+}
+
+.trigger[aria-expanded='true'] {
+    background: var(--cream);
+}
+
+/* Custom chevron arrow */
+.arrow {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.arrow::before,
+.arrow::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 1.5px;
+    background: var(--gold);
+    top: 50%;
+    transition: transform var(--duration) var(--ease);
+}
+
+.arrow::before {
+    left: 0;
+    transform: translateY(-50%) rotate(45deg) translateX(1px);
+}
+
+.arrow::after {
+    right: 0;
+    transform: translateY(-50%) rotate(-45deg) translateX(-1px);
+}
+
+/* Flip arrow when open */
+.trigger[aria-expanded='true'] .arrow::before {
+    transform: translateY(-50%) rotate(-45deg) translateX(1px);
+}
+
+.trigger[aria-expanded='true'] .arrow::after {
+    transform: translateY(-50%) rotate(45deg) translateX(-1px);
+}
+
+.body {
+    padding: 0 var(--space-lg) var(--space-lg);
+    background: var(--cream);
+    animation: accordionOpen 0.25s var(--ease);
+}
+
+.body p {
+    font-size: 0.9rem;
+    color: var(--slate);
+    line-height: 1.8;
+}

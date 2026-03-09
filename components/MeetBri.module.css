@@ -1,0 +1,59 @@
+.section {
+    background: var(--white);
+}
+
+.card {
+    background: var(--ivory);
+    border: 1px solid var(--beige);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-sm);
+}
+
+.copy {
+    font-size: 1.05rem;
+    color: var(--slate);
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
+.copy:last-of-type {
+    margin-bottom: var(--space-lg);
+}
+
+.bullets {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    border-top: 1px solid var(--beige);
+    padding-top: var(--space-lg);
+}
+
+.bullet {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+}
+
+.bulletIcon {
+    color: var(--gold);
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    margin-top: 0.35rem;
+}
+
+.bullet strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.25rem;
+}
+
+.bullet p {
+    font-size: 0.9rem;
+    color: var(--taupe);
+    line-height: 1.6;
+}

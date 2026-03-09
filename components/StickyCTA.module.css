@@ -1,0 +1,29 @@
+.stickyBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    padding: 0.75rem var(--space-sm);
+    background: var(--ivory);
+    border-top: 1px solid var(--beige);
+    box-shadow: 0 -4px 20px rgba(30, 43, 60, 0.1);
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: none;
+    /* Hidden on desktop via media query below */
+}
+
+.visible {
+    transform: translateY(0);
+}
+
+.btn {
+    border-radius: var(--radius-md);
+}
+
+@media (max-width: 768px) {
+    .stickyBanner {
+        display: block;
+    }
+}

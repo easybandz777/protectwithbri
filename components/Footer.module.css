@@ -1,0 +1,118 @@
+.footer {
+    background: var(--navy);
+    color: var(--taupe-light);
+    padding: var(--space-xxl) 0 var(--space-lg);
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: var(--space-xl);
+}
+
+.brandName {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ivory);
+    margin-bottom: 0.5rem;
+}
+
+.brandDot {
+    color: var(--gold);
+}
+
+.tagline {
+    font-size: 0.875rem;
+    color: var(--taupe-light);
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+}
+
+.agent {
+    font-size: 0.8rem;
+    color: var(--taupe);
+    font-style: italic;
+}
+
+.colTitle {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: var(--space-sm);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    list-style: none;
+}
+
+.link {
+    font-size: 0.875rem;
+    color: var(--taupe-light);
+    transition: color var(--duration) var(--ease);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--ivory);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    align-items: center;
+    text-align: center;
+}
+
+.copy {
+    font-size: 0.8rem;
+    color: var(--taupe);
+}
+
+.legal {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.legalLink {
+    font-size: 0.78rem;
+    color: var(--taupe);
+    transition: color var(--duration) var(--ease);
+}
+
+a.legalLink:hover {
+    color: var(--ivory);
+}
+
+.disclaimer {
+    font-size: 0.78rem;
+    color: var(--taupe);
+    max-width: 680px;
+    line-height: 1.65;
+    opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+    .top {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-lg);
+    }
+}
+
+@media (max-width: 600px) {
+    .top {
+        grid-template-columns: 1fr;
+    }
+}

@@ -95,7 +95,7 @@ export default function Hero() {
                         priority
                         className={styles.image}
                         sizes="(max-width: 1024px) 100vw, 50vw"
-                        style={{ objectFit: 'cover', objectPosition: '40% top' }}
+                        style={{ objectFit: 'cover', objectPosition: '50% 15%' }}
                     />
                     {/* Badge pinned over image */}
                     <div className={styles.badge}>

@@ -11,6 +11,9 @@ export default function Hero() {
                 {/* Warm ambient glow layer — pure CSS decoration */}
                 <div className={styles.glowLayer} aria-hidden="true" />
 
+                {/* Gold editorial rule — top-left accent */}
+                <div className={styles.topRule} aria-hidden="true" />
+
                 {/* Soft visual bridge gradient flowing toward the portrait */}
                 <div className={styles.bridge} aria-hidden="true" />
 
@@ -92,7 +95,7 @@ export default function Hero() {
                         priority
                         className={styles.image}
                         sizes="(max-width: 1024px) 100vw, 50vw"
-                        style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                        style={{ objectFit: 'cover', objectPosition: '20% top' }}
                     />
                     {/* Badge pinned over image */}
                     <div className={styles.badge}>

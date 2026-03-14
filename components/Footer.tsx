@@ -6,6 +6,7 @@ const FOOTER_PAGES = [
     { href: '#services', label: 'Coverage Guidance' },
     { href: '#faq', label: 'FAQ' },
     { href: '#consultation', label: 'Book a Consultation' },
+    { href: '/study-guide', label: '🔐 Partner Login' },
 ] as const;
 
 export default function Footer() {

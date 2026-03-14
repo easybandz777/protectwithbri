@@ -5,6 +5,21 @@ export default function Hero() {
     return (
         <section className={styles.hero} id="hero" aria-labelledby="hero-heading">
 
+            {/* ── FULLSCREEN BACKGROUND VIDEO ── */}
+            <div className={styles.videoBg} aria-hidden="true">
+                <video
+                    className={styles.videoBgPlayer}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="auto"
+                >
+                    <source src="/hero-bg.mp4" type="video/mp4" />
+                </video>
+                <div className={styles.videoOverlay} />
+            </div>
+
             {/* ── LEFT: Premium editorial content panel ── */}
             <div className={styles.left}>
 
@@ -89,7 +104,7 @@ export default function Hero() {
             <div className={styles.right}>
                 <div className={styles.imageWrap}>
                     <Image
-                        src="/images/brianna-hero.jpg"
+                        src="/images/brianna-hero.png"
                         alt="Brianna Willis, Insurance Advisor, standing in front of the ProtectWithBri.com office logo"
                         width={1024}
                         height={682}

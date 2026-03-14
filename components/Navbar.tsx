@@ -89,14 +89,19 @@ export default function Navbar() {
                     ))}
                 </ul>
 
-                {/* Desktop CTA */}
-                <a
-                    href="#consultation"
-                    className={`btn btn--nav ${styles.desktopCta}`}
-                    onClick={(e) => handleAnchorClick(e, '#consultation')}
-                >
-                    Book a Consultation
-                </a>
+                {/* Desktop CTAs */}
+                <div className={styles.desktopActions}>
+                    <Link href="/study-guide" className={styles.partnerLink}>
+                        🔐 Partner Login
+                    </Link>
+                    <a
+                        href="#consultation"
+                        className={`btn btn--nav ${styles.desktopCta}`}
+                        onClick={(e) => handleAnchorClick(e, '#consultation')}
+                    >
+                        Book a Consultation
+                    </a>
+                </div>
 
                 {/* Hamburger */}
                 <button
@@ -133,6 +138,11 @@ export default function Navbar() {
                                 </a>
                             </li>
                         ))}
+                        <li>
+                            <Link href="/study-guide" className={styles.link} onClick={closeMenu}>
+                                🔐 Partner Login
+                            </Link>
+                        </li>
                         <li>
                             <a
                                 href="#consultation"

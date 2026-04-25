@@ -39,9 +39,9 @@ export default function Footer() {
                     <div>
                         <h3 className={styles.colTitle}>Connect</h3>
                         <ul className={styles.list} role="list">
-                            {/* TODO: Replace # with real social URLs */}
+                            {/* TODO: Replace # with real Facebook URL */}
                             <li><a href="#" className={styles.link} aria-label="Facebook">Facebook</a></li>
-                            <li><a href="#" className={styles.link} aria-label="LinkedIn">LinkedIn</a></li>
+                            <li><a href="https://www.linkedin.com/in/brianna-willis-insurance/" target="_blank" rel="noopener noreferrer" className={styles.link} aria-label="LinkedIn">LinkedIn</a></li>
                         </ul>
                     </div>
 

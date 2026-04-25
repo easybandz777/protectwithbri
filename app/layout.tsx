@@ -31,9 +31,16 @@ export const metadata: Metadata = {
             'Personalized guidance for life and supplemental coverage with clarity, compassion, and confidence.',
         url: 'https://protectwithbri.com',
         siteName: 'ProtectWithBri.com',
-        images: [{ url: '/images/brianna-hero.jpg', width: 1200, height: 630, alt: 'Brianna Willis' }],
+        images: [{ url: '/images/brianna-hero.png', width: 1536, height: 1024, alt: 'Brianna Willis, Licensed Insurance Advisor at ProtectWithBri.com' }],
         type: 'website',
         locale: 'en_US',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'ProtectWithBri.com | Personalized Insurance Guidance',
+        description:
+            'Personalized guidance for life and supplemental coverage with clarity, compassion, and confidence.',
+        images: ['/images/brianna-hero.png'],
     },
 };
 
